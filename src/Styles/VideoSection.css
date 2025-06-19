@@ -1,0 +1,154 @@
+.video-section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 0rem;
+  background-color: #0f0f30;
+  height: 85vh;
+ 
+  margin-right: 3%;
+  margin-left: 3%;
+  box-sizing: border-box;
+}
+.video-left
+{
+display: flex;
+flex-direction: column;
+position: absolute;
+margin-top: 5%;
+gap : 20px ; 
+}
+.video-left,
+.video-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  margin-top : 5%; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-feed,
+.thumbnail {
+  width: 500px;
+height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  /* box-shadow: 0 4px 10px #ffffff1a; */
+}
+.record-badge {
+  background-color: red;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.timing {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fafcff;
+}
+
+.time {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e8e8e9;
+}
+
+.video-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.end-btn,
+.start-btn,
+.stop-btn {
+  width: 25%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  color: white;
+  cursor: pointer;
+}
+
+.end-btn {
+  background-color: #dc2626;
+}
+
+.end-btn:hover {
+  background-color: #b91c1c;
+}
+
+.start-btn {
+  background-color: #16a34a;
+}
+
+.start-btn:hover {
+  background-color: #15803d;
+}
+
+.stop-btn {
+  background-color: #eab308;
+}
+
+.stop-btn:hover {
+  background-color: #ca8a04;
+}
+
+.speaking-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #ef4444, #ec4899, #8b5cf6);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  animation: pulse 1.5s infinite;
+}
+
+.ping-dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: white;
+  border-radius: 9999px;
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}

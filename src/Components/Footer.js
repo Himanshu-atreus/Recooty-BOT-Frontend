@@ -10,35 +10,38 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-              Health <span className="ft-sign">+</span>
+              Recooty 
             </p>
             <p className="ft-description">
-              Talk to online doctors and get medical advice, online
-              prescriptions, refills and medical notes within minutes. On-demand
-              healthcare services at your fingertips.
+             Talk to our AI Interview Bot and get expert interview prep, resume reviews, mock interviews, 
+             and real-time feedback within minutes. On-demand interview coaching at your fingertips.
             </p>
           </div>
 
           <SubscribeNewsletter />
         </div>
+        
+
 
         <div className="ft-list">
-          <p className="ft-list-title">Services</p>
+          <p className="ft-list-title">Product</p>
           <ul className="ft-list-items">
             <li>
-              <a href="#services">Emergency Care</a>
+              <a href="#services">Applicant Tracking System</a>
             </li>
             <li>
-              <a href="#services">Heart Disease</a>
+              <a href="#services">Build Careers Page</a>
             </li>
             <li>
-              <a href="#services">Dental Care</a>
+              <a href="#services">Free Job Posting</a>
             </li>
             <li>
-              <a href="#services">Prescription</a>
+              <a href="#services">
+Partner Job Boards</a>
             </li>
             <li>
-              <a href="#services">Insights for doctors</a>
+              <a href="#services">
+Pricing</a>
             </li>
           </ul>
         </div>
@@ -68,30 +71,30 @@ function Footer() {
           <p className="ft-list-title">Talk To Us</p>
           <ul className="ft-list-items">
             <li>
-              <a href="mailto:support@healthplus.com">support@healthplus.com</a>
+              <a href="mailto:support@healthplus.com">support@recooty.com</a>
             </li>
             <li>
               <a href="mailto:appointment@healthplus.com">
-                appointment@healthplus.com
+                interivew@recooty.com
               </a>
             </li>
             <li>
-              <a href="tel:+022 5454 5252">+022 5454 5252</a>
+              <a href="tel:+022 5454 5252">+xxxxxxxxx</a>
             </li>
             <li>
-              <a href="tel:+022 2326 6232">+022 2326 6232</a>
+              <a href="tel:+022 2326 6232">+xxxxxxxxxx</a>
             </li>
           </ul>
         </div>
       </div>
 
       <div className="ft-copyright">
-        <p>© 2013-2023 Health+. All rights reserved.</p>
+        <p>© 2018-2025 Recooty. All rights reserved.</p>
 
         <ul className="ft-social-links">
           <li>
             <a
-              href="https://linkedin.com/in/Alkaison/"
+              href="need to filled"
               title="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
@@ -108,7 +111,7 @@ function Footer() {
 
           <li>
             <a
-              href="https://facebook.com/"
+              href="need to filled"
               title="FaceBook"
               target="_blank"
               rel="noopener noreferrer"
@@ -125,7 +128,7 @@ function Footer() {
 
           <li>
             <a
-              href="https://x.com/Alkaison/"
+              href="need to filled"
               title="Twitter"
               target="_blank"
               rel="noopener noreferrer"

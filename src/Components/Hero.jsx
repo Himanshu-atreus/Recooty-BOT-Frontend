@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Doctor from "../Assets/doctor-picture.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import { faTabletScreenButton, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate  } from "react-router-dom";
 import "../Styles/Hero.css";
-
+import img from "../Assets/saying hi.png"
 function Hero() {
   const navigate = useNavigate();
   const [goUp, setGoUp] = useState(false);
@@ -13,8 +13,8 @@ function Hero() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+  const handleinterviewclick = () => {
+    navigate("/interview");
   };
 
   useEffect(() => {
@@ -36,42 +36,50 @@ function Hero() {
     <div className="section-container">
       <div className="hero-section">
         <div className="text-section">
-          <p className="text-headline">❤️ Health comes first</p>
+          <p className="text-headline">Meet Rico — Your Smart AI Interviewer</p>
           <h2 className="text-title">
-            Find your Doctor and make an Appointments
+            Revolutionize the hiring process with automated, intelligent candidate interviews 
           </h2>
           <p className="text-descritpion">
-            Talk to online doctors and get medical advice, online prescriptions,
-            refills and medical notes within minutes. On-demand healthcare
-            services at your fingertips.
+        What Rico Does
+        <br/>
+        🕒 24/7 Interview Availability
+            <br/>
+        🧠 AI-Powered Evaluation
+            <br/>
+        ⚖️ Bias-Free Screening
+            <br/>
+        🔍 Deep Candidate Insights
+            <br/>
+        🌍 Remote-Friendly
           </p>
           <button
             className="text-appointment-btn"
             type="button"
-            onClick={handleBookAppointmentClick}
+            onClick={handleinterviewclick}
           >
-            <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
+            <FontAwesomeIcon icon={faTabletScreenButton} /> Create Interview
           </button>
           <div className="text-stats">
             <div className="text-stats-container">
-              <p>145k+</p>
-              <p>Receive Patients</p>
+              <p>Fullstack</p>
+              <p>Take interview</p>
             </div>
 
             <div className="text-stats-container">
-              <p>50+</p>
-              <p>Expert Doctors</p>
+              <p>Senior Developer</p>
+              <p>Take interview</p>
             </div>
 
             <div className="text-stats-container">
-              <p>10+</p>
-              <p>Years of Experience</p>
+              <p>Analyst</p>
+              <p>Take interivew</p>
             </div>
           </div>
         </div>
 
         <div className="hero-image-section">
-          <img className="hero-image1" src={Doctor} alt="Doctor" />
+          <img className="hero-image1" src={img} alt="chat bot" />
         </div>
       </div>
 

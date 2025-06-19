@@ -1,6 +1,6 @@
 import React from "react";
 import InformationCard from "./InformationCard";
-import { faHeartPulse, faTruckMedical, faTooth } from "@fortawesome/free-solid-svg-icons";
+import { faLevelUp, faTools, faTimeline } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Info.css";
 
 function Info() {
@@ -11,42 +11,33 @@ function Info() {
           <span>What We Do</span>
         </h3>
         <p className="info-description">
-          We bring healthcare to your convenience, offering a comprehensive
-          range of on-demand medical services tailored to your needs. Our
-          platform allows you to connect with experienced online doctors who
-          provide expert medical advice, issue online prescriptions, and offer
-          quick refills whenever you require them.
+         We bring interviewing to your convenience, offering a comprehensive range of on-demand,
+          AI-powered interviews tailored to different roles, skills, and difficulty levels.
+           Our intelligent platform connects candidates with Recooty’s smart chat bot, capable of conducting structured interviews,
+            evaluating performance, and delivering actionable insights instantly.
         </p>
       </div>
 
       <div className="info-cards-content">
         <InformationCard
-          title="Emergency Care"
-          description="Our Emergency Care service is designed to be your reliable support
-            in critical situations. Whether it's a sudden illness, injury, or
-            any medical concern that requires immediate attention, our team of
-            dedicated healthcare professionals is available 24/7 to provide
-            prompt and efficient care."
-          icon={faTruckMedical}
+          title="Role-Based Interviewing"
+          description="Whether it's tech, marketing, HR, finance, or operations — our bot is equipped with role-specific question banks,
+           ensuring every candidate is assessed fairly, thoroughly, and in line with the position's requirements."
+          icon={faTools}
         />
 
         <InformationCard
-          title="Heart Disease"
-          description="Our team of experienced cardiologists and medical experts use
-            state-of-the-art technology to assess your cardiovascular health and
-            design personalized treatment plans. From comprehensive screenings
-            to advanced interventions, we are committed to helping you maintain
-            a healthy heart and lead a fulfilling life."
-          icon={faHeartPulse}
+          title="Difficulty Customization"
+          description="From entry-level screenings to senior expert evaluations, our system dynamically adapts to the selected difficulty level,
+           allowing hiring teams to run interviews for freshers, experienced professionals, and leadership candidates with precision."
+          icon={faLevelUp}
         />
 
         <InformationCard
-          title="Dental Care"
-          description="Smile with confidence as our Dental Care services cater to all your
-            oral health needs. Our skilled dentists provide a wide range of
-            treatments, from routine check-ups and cleanings to cosmetic
-            procedures and restorative treatments."
-          icon={faTooth}
+          title="Real-Time Evaluation"
+          description="Our chat bot provides instant feedback, skill scoring, 
+          and behavioral analysis based on candidate responses — helping you make faster, data-driven hiring decisions without manual effort."
+          icon={faTimeline}
         />
       </div>
     </div>
